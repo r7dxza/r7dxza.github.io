@@ -1,5 +1,3 @@
-# Valentine's Day Card Generator
-
 def generate_valentines_card(sender, recipient):
     message = (
         f"Dear {recipient},\n\n"
