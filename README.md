@@ -1,23 +1,53 @@
-def generate_valentines_card(sender, recipient):
-    message = (
-        f"Dear {recipient},\n\n"
-        "I wanted to take this moment on Valentine's Day to express my feelings for you.\n"
-        "You mean the world to me, and I am incredibly grateful to have you in my life.\n"
-        "Your love and support have brought me immense joy and happiness.\n"
-        "On this special day, I want to remind you of how much I care for you.\n"
-        "Will you be my Valentine?\n\n"
-        "With all my love,\n"
-        f"{sender}"
-    )
-    return message
-
-def main():
-    sender_name = input("Enter your name: ")
-    recipient_name = input("Enter your girlfriend's name: ")
-    
-    valentines_message = generate_valentines_card(sender_name, recipient_name)
-    print("\n\nGenerated Valentine's Day Message:\n\n")
-    print(valentines_message)
-
-if __name__ == "__main__":
-    main()
+activities.html
+font-size: 50px;
+            margin-bottom: 30px;
+		}
+		.activity-item {
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+			color: #FF9494;
+        }
+        .activity-item img {
+            width: 220px; 
+            height: auto;
+			padding: 10px;
+        }
+        .activity-item label {
+            display: block;
+        }
+	</style>
+</head>
+<body>
+	<div id="activityquestion"><u><b>What are we doing after?</b></u>
+	<div id="activityquestion"><b>What are we doing after?</b>
+	</div>
+	<div class = "activities-selection">
+		<div class="activity-item">
+			<img src="activities/aquarium.jpeg" alt ="aquarium">
+			<label><input type="checkbox" name="activities" value ="aquarium">aquarium</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/arcade.jpeg" alt ="arcade">
+			<label><input type="checkbox" name="activities" value ="arcade">arcade</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/cinema.jpeg" alt ="cinema">
+			<label><input type="checkbox" name="activities" value ="cinema">cinema</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/keramika.jpeg" alt ="ceramics">
+			<label><input type="checkbox" name="activities" value ="ceramics">ceramics</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/kunsthalle.jpeg" alt ="kunsthalle">
+			<label><input type="checkbox" name="activities" value ="kunsthalle">exhibition</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/park.jpeg" alt ="park.jpeg">
+			<label><input type="checkbox" name="activities" value ="park.jpeg">park</label>
+		</div>
+	</div>
+	<button onclick="location.href='lastpage.html'">Last page</button>
+</body>
+</html>
